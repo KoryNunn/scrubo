@@ -71,6 +71,12 @@ function rerender(){
         m('div',
             m('h1', 'Coilover lower mount adjustment calculator'),
             m('p', 'Jack the car up, let the wheels hang at full extension.'),
+            m('p', 
+                'Units: ',
+                m('a', { class: 'metric' }, 'Metric'),
+                ' | ',
+                m('a', { href: 'https://www.youtube.com/watch?v=5iXyyQBGl-Y', target: '_new' }, 'Imperial')
+            ),
             m(checkField, {
                 label: 'Is it a McPherson strut?',
                 property: 'mcPherson'
